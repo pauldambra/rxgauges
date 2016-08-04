@@ -1,0 +1,12 @@
+$baseFontSize: 18;
+$green: #1abc9c;
+$yellow: #f1c40f;
+$red: #c0392b;
+$blue: #3498db;
+$grey: #f2f2f2;
+$footerHeight: 3em;
+$panelWidth: 400px;
+
+@function rem($val) {
+  @return #{$val / $baseFontSize}rem;
+}

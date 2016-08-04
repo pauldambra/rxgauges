@@ -1,0 +1,9 @@
+@import 'variables.scss';
+
+.random-cat {
+	img {
+		width:$panelWidth;
+		height:$panelWidth/2;
+		background-size: cover;
+	}
+}

@@ -1,0 +1,44 @@
+@import 'variables.scss';
+@import 'errors.scss';
+@import 'gauge.scss';
+@import 'cat.scss';
+
+body {
+  font-size: #{$baseFontSize}px;
+  min-height: 400px;
+  padding-bottom: $footerHeight;
+
+  footer {
+  	position:absolute;
+   bottom:0;
+   width:100%;
+   height:$footerHeight; 
+  }
+}
+
+header {
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+  
+  background: $grey;  
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  min-height: 270px;
+}
+
+.panel {
+	flex: 1;
+	width:$panelWidth;
+	height:$panelWidth/2;
+
+	h1 {font-size: 1rem;}
+}

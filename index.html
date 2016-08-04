@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>A set of gauges</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="public/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>Some RX driven gauges</h1>
+		</header>
+		<section class="content">
+			<div class="panel">
+				<div class="centerer">
+					<h1>Random Number</h1>
+					<div class="box gauge--random-number">
+						<div class="mask">
+							<div class="semi-circle"></div>
+							<div class="semi-circle--mask"></div>
+						</div>
+						<div class="number">
+							<span class="value"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<h1>Random Cat</h1>
+				<div class="box random-cat">
+					<img>
+				</div>
+			</div>
+		</section>
+		<div class="error-box blink">
+			Oh Oh! One of the gatherererers has broek. Kwik refresh!
+		</div>
+		<footer>
+			gauge shamelessly stolen from <a href="http://codepen.io/Sambego/pen/zKLar" target="_blank" rel="noopener">this codepen</a>
+		</footer>
+		<script src="/public/bundle.js"></script>
+	</body>
+</html>

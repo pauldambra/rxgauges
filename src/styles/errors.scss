@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+.error-box {
+	width: 100%;
+    background-color: rgba($red, 0.5);
+    color: black;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    display: none; 
+    text-align: center;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
