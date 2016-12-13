@@ -1,6 +1,6 @@
 target: run_server
 
-clean: 
+clean:
 	rm -rf node_modules
 
 reinstall: clean
@@ -15,13 +15,13 @@ bundle:
 	node_modules/.bin/browserify src/scripts/main.js -o public/bundle.js -d -t [ babelify --presets [ es2015 ] ]
 
 watchify:
-	node_modules/.bin/watchify src/scripts/main.js -o public/bundle.js -d -t [ babelify --presets [ es2015 ] ]	
+	node_modules/.bin/watchify src/scripts/main.js -o public/bundle.js -d -t [ babelify --presets [ es2015 ] ]
 
 styles:
-	node_modules/.bin/node-sass src/styles/main.scss public/style.css
+	"node_modules/.bin/node-sass" src/styles/main.scss public/style.css
 
 watch_styles:
-	node_modules/.bin/node-sass -w src/styles/main.scss public/style.css
+	"node_modules/.bin/node-sass" -w src/styles/main.scss public/style.css
 
 run_server:
 	python -m SimpleHTTPServer
