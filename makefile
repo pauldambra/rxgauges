@@ -4,7 +4,7 @@ clean:
 	rm -rf node_modules
 
 reinstall: clean
-	npm install
+	yarn
 
 ensure_outdir:
 	mkdir -p public
@@ -26,6 +26,11 @@ watch_styles:
 run_server:
 	python -m SimpleHTTPServer
 
+run_server_py_3:
+  python -m http.server
+
 build: .NOTPARALLEL prepare styles bundle
 
 dev: watchify styles watch_styles run_server
+
+dev_python3: watchify styles watch_styles run_server_py_3
